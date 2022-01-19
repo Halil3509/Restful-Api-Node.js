@@ -16,7 +16,7 @@ var app = express();
 mongoose.Promise = global.Promise;
 
 //Database bağlama işlemleri 
-const dbURL='mongodb://halililbo:fD8DRaxhX6XjJfRP@cluster0-shard-00-00.qjj48.mongodb.net:27017,cluster0-shard-00-01.qjj48.mongodb.net:27017,cluster0-shard-00-02.qjj48.mongodb.net:27017/baskanlik-secimi-bireysel?ssl=true&replicaSet=atlas-10dmto-shard-0&authSource=admin&retryWrites=true&w=majority'
+const dbURL=''
 mongoose.connect(dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => console.log('Data base bağlandı.')).catch((err) => console.log("Database bağlanamadı hata: "+err));
 
